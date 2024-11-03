@@ -29,16 +29,16 @@ const Navbar = () => {
                         <li><a>FAQ</a></li>
                     </ul>
                 </div>
-                <ul className="menu menu-horizontal px-1 text-[#213343]">
+                <ul className="menu menu-horizontal px-1 text-[#213343] hidden lg:flex">
                     <li><a>Home</a></li>
                     <li><a>About Us</a></li>
                     <li><a>FAQ</a></li>
                 </ul>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-center">
                 <Link to={'/'}><img src="/logo.png" alt="" /></Link>
             </div>
-            <div className="navbar-end gap-3">
+            <div className="navbar-end gap-3 hidden">
                 <button>Login</button>
                 <Button text="Start for Free"></Button>
             </div>

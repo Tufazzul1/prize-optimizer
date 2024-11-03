@@ -23,9 +23,9 @@ const Why = () => {
     ]
     return (
         <div className="py-16 bg-[#FEF4EA] relative sm:px-5 md:px-8 lg:px-16">
-            <img className="absolute right-[25px] top-[50%] bottom-[50%] z-0" src="/who-bg.png" alt="" />
+            <img className="absolute right-[35px] top-[50%] bottom-[50%] z-0" src="/who-bg.png" alt="" />
             <h2 className="text-4xl font-Cormorant text-center">Why Choose PriceOptimizer?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 my-10 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-4 p-4 gap-5 my-10 relative z-10">
                 {
                     cardData.map((card) => (
                         <div key={card.title} className="bg-white p-3 rounded-lg ">
