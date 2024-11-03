@@ -38,7 +38,7 @@ const Navbar = () => {
             <div className="navbar-center">
                 <Link to={'/'}><img src="/logo.png" alt="" /></Link>
             </div>
-            <div className="navbar-end gap-3 hidden">
+            <div className="navbar-end gap-3">
                 <button>Login</button>
                 <Button text="Start for Free"></Button>
             </div>
