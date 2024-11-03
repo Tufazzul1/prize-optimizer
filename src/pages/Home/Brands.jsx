@@ -16,8 +16,14 @@ const Brands = () => {
                 <img className="ml-10" src="/brand1.png" alt="" />
                 <img className="ml-10" src="/brand2.png" alt="" />
                 <img className="ml-10" src="/brand3.png" alt="" />
+                <img className="ml-10" src="/brand1.png" alt="" />
+                <img className="ml-10" src="/brand2.png" alt="" />
+                <img className="ml-10" src="/brand3.png" alt="" />
             </Marquee>
             <Marquee className="mt-5 md:mt-10" direction="right" speed={30}>
+                <img className="ml-10" src="/brand3.png" alt="" />
+                <img className="ml-10" src="/brand1.png" alt="" />
+                <img className="ml-10" src="/brand2.png" alt="" />
                 <img className="ml-10" src="/brand3.png" alt="" />
                 <img className="ml-10" src="/brand1.png" alt="" />
                 <img className="ml-10" src="/brand2.png" alt="" />

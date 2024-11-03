@@ -1,7 +1,7 @@
 
 const HowWork = () => {
     return (
-        <div className="py-16 bg-[#B7ECEC] relative sm:px-5 md:px-8 lg:px-16">
+        <div id="about" className="py-16 bg-[#B7ECEC] relative sm:px-5 md:px-8 lg:px-16">
             <img className="top-16 left-24 absolute" src="/WorkBg.png" alt="" />
             <div className="text-center">
                 <h2 className="text-4xl font-Cormorant">How It Works</h2>
