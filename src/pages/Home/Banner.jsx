@@ -6,7 +6,7 @@ const Banner = () => {
         <div className="flex flex-col md:flex-row py-8 md:py-16 bg-[#FEF4EA] sm:px-5 md:px-8 lg:px-16">
             <div className="flex-1">
                 <p className="font-inter">Best Price Solution for E-Commerce</p>
-                <h2 className="sm:text-xl md:text-2xl lg:text-4xl font-cinzel font-bold">
+                <h2 className="sm:text-xl md:text-2xl lg:text-4xl font-Cormorant font-bold">
                     Maximize Your Profits with <br /> the Best Price Optimizer <br /> for E-Commerce
                 </h2>
                 <p className="mt-6">
