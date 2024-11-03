@@ -1,4 +1,5 @@
 const Faq = () => {
+
     const faqs = [
         {
             question: "Q1: What is PriceOptimizer?",
@@ -33,7 +34,7 @@ const Faq = () => {
     return (
         <div className="sm:px-5 md:px-8 lg:px-16 relative py-16 bg-[#FEF4EA]">
             <img className="absolute right-0 bottom-0" src="/faqbg1.png" alt="faq-img" />
-            <img className="absolute top-[40%] bottom-[60%]" src="/faqbg2.png" alt="faq-img" />
+            <img className="absolute top-[35%] bottom-[65%]" src="/faqbg2.png" alt="faq-img" />
             <h2 className="text-4xl font-Cormorant text-center mb-5 font-semibold">Frequently Asked Questions</h2>
             <div className="max-w-[830px] mx-auto"> 
                 {faqs.map((faq, index) => (
