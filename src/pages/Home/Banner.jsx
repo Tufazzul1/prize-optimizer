@@ -13,9 +13,9 @@ const Banner = () => {
                     Use Price Optimizer to track competitor prices and stay ahead.
                 </p>
 
-                <div className="space-x-3 flex py-4 md:py-10">
+                <div className="space-x-4 flex py-4 md:py-10">
                     <Button text={"Start for Free"}></Button>
-                    <button className="flex items-center text-[#FF5C35]">
+                    <button className="flex items-center text-[#FF5C35] gap-2">
                         <IoPlayCircleOutline /> Watch Video
                     </button>
                 </div>
