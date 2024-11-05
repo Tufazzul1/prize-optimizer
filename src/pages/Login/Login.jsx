@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useAuth from "../../hooks/useAuth";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 
@@ -9,7 +9,6 @@ const Login = () => {
 
     const { signIn, signInWithGoogle } = useAuth()
     const [showPassword, setShowPassword] = useState(false);
-    const location = useLocation();
     // console.log( "location from login",location)
     const navigate = useNavigate();
 
@@ -23,13 +22,8 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result.user);
-                // navigate the user 
-
-                setTimeout(() => {
-                    // navigate 
-                    navigate(location?.state ? location.state : '/');
-                }, 1000);
-
+                // navigate 
+                navigate('/dashboard');
             })
             .catch(error => {
                 console.log(error)
@@ -41,10 +35,8 @@ const Login = () => {
         socialProvider()
             .then(result => {
                 console.log(result.user);
-                setTimeout(() => {
                     // navigate 
-                    navigate(location?.state ? location.state : '/');
-                }, 1000);
+                    navigate('/dashboard');
             })
             .catch(error => {
                 console.log(error)
