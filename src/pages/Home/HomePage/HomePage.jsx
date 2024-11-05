@@ -1,3 +1,4 @@
+import Navbar from "../../../components/Navbar";
 import About from "../About";
 import Banner from "../Banner";
 import Brands from "../Brands";
@@ -12,6 +13,7 @@ import Why from "../Why";
 const HomePage = () => {
     return (
         <div>
+            <Navbar></Navbar>
             <Banner></Banner>
             <Brands></Brands>
             <Why></Why>

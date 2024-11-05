@@ -1,8 +1,20 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import useAuth from "../hooks/useAuth";
 
 
 const Navbar = () => {
+    const { user, logOut } = useAuth();
+
+    const handleSignOut = () => {
+        logOut()
+            .then(result => {
+                console.log(result)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
     return (
         <div className="bg-[#FEF4EA]">
             <div className="navbar max-w-[1240px] mx-auto py-4 sm:px-5 md:px-8 lg:px-16">
@@ -40,7 +52,9 @@ const Navbar = () => {
                     <Link to={'/'}><img src="/logo.png" alt="" /></Link>
                 </div>
                 <div className="navbar-end gap-3">
-                    <button>Login</button>
+                    {
+                        user ? <button onClick={handleSignOut}>Logout</button> : <Link to={'/login'}>Login</Link>
+                    }
                     <Button text="Start for Free"></Button>
                 </div>
             </div>
